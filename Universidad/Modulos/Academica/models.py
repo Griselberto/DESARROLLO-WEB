@@ -28,7 +28,7 @@ class Estudiante(models.Model):
 
 	def nombreCompleto(self):
 		txt = "{0} {1}, {2}"
-		return txt.format(self.apellidoPaterno, self.apellidoPaterno,self.nombres)
+		return txt.format(self.apellidoPaterno, self.apellidoMaterno,self.nombres)
 	def __str__(self):
 		txt = "{0} / Carrera : {1} / {2}"
 		if self.vigencia:
